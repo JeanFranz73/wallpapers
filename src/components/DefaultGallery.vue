@@ -84,13 +84,13 @@ export default {
     <div v-for="wpp, i in getByCategory(getCategory)" :key="i"
          class="group cursor-pointer relative ring-inset" @click="openModal(wpp)">
       <img :src="wpp.url" class="object-cover w-full aspect-video rounded" />
-      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-zinc-900/30">
+      <div class="absolute hidden sm:flex inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-zinc-900/30">
         <button class="bg-zinc-900 text-xs px-2 py-1">
           View
         </button>
       </div>
 
-      <div class="absolute flex justify-between bottom-0 w-full p-1 bg-zinc-900 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+      <div class="absolute hidden sm:flex justify-between bottom-0 w-full p-1 bg-zinc-900 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
         <div>
           {{ resolution(wpp) }}
         </div>
