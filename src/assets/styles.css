@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
+.noise {
+  position: absolute;
+  opacity: 0.2;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  background-image: url("@/assets/noise.png");
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+#keyboard_container {
+  font-size: 0.75rem;
+  display: flex;
+  width: max-content;
+  gap: 4ch;
+  align-items: end;
+}
+
+.key_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.keys {
+  display: flex;
+  gap: 0.5ch;
+  margin-bottom: 0.125rem;
+}
+
+.key {
+  line-height: 1rem;
+  display: inline;
+  border: 0.05rem dashed;
+  border-bottom: 0.2rem solid;
+  padding: 0 calc(0.5ch - 0.0625rem);
+  user-select: none;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border: 2px solid #0000;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
