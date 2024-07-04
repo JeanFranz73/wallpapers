@@ -18,6 +18,7 @@ export default {
     navigation: [
       { name: 'all', path: '/' },
       { name: 'fantasy', path: '/fantasy' },
+      {name: 'scifi', path: '/scifi' }
     ]
   }),
 
@@ -43,12 +44,12 @@ export default {
           <div class="hidden sm:block">
             <div class="flex space-x-4">
               <router-link v-for="item in navigation" :key="item.name" :to="item.path"
-                           :class="[isCurrentRoute(item.path)
-                                      ? 'bg-stone-400 text-zinc-900'
-                                      : 'text-gray-300 hover:bg-zinc-700 hover:text-white',
-                                    'px-1.5 py-1 text-xs']"
-                           :aria-current="item.current ? 'page' : undefined">{{
-                             item.name }}</router-link>
+                           :class="[
+                             isCurrentRoute(item.path)
+                               ? 'bg-stone-400 text-zinc-900'
+                               : 'text-gray-300 hover:bg-zinc-700 hover:text-white',
+                             'px-1.5 py-1 text-xs'
+                           ]" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</router-link>
             </div>
           </div>
         </div>
