@@ -8,8 +8,7 @@ import {
 
 export default {
   data: () => ({
-    // isOpen: localStorage.getItem('welcomeDialog') === null
-    isOpen: true
+    isOpen: localStorage.getItem('welcomeDialog') === null
   }),
 
   methods: {
