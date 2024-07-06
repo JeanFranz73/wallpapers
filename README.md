@@ -12,10 +12,10 @@ if you want to send a wallpaper, you can do so by creating a pull request with t
 
 ```jsonc
 {
-  "title": "title", # the title of the wallpaper
-  "author": "author", # or unkown
-  "filename": "wallpaper.png", # the filename of the wallpaper
-  "categories": ["category1", "category2"] # the categories of the wallpaper
+  "title": "title", // the title of the wallpaper
+  "author": "author", // or unkown
+  "filename": "wallpaper.png", // the filename of the wallpaper
+  "categories": ["category1", "category2"] // the categories of the wallpaper
 }
 ```
 
