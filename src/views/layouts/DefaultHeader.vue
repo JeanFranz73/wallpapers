@@ -18,7 +18,7 @@ export default {
     navigation: [
       { name: 'all', path: '/' },
       { name: 'fantasy', path: '/fantasy' },
-      {name: 'scifi', path: '/scifi' }
+      {name: 'scifi', path: '/scifi' },
       {name: 'games', path: '/games' }
     ]
   }),
