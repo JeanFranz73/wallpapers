@@ -22,5 +22,11 @@
         ],
         "title": "superbloom",
         "author": "Kevin Hong"
-    }
+    },
+    {
+        "title": "avowed",
+        "author": "obsidian",
+        "filename": "avowed.png",
+        "categories": ["fantasy", "games"]
+      }
 ]

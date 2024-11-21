@@ -23,6 +23,7 @@ you can add multiple categories to the wallpaper, and the current available cate
 
 - `fantasy`
 - `scifi`
+- `games`
 
 ## project setup
 
