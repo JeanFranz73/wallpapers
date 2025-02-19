@@ -14,6 +14,7 @@ if you want to send a wallpaper, you can do so by creating a pull request with t
 {
   "title": "title", // the title of the wallpaper
   "author": "author", // or unkown
+  "author_url": "https://author.url", // the url of the author
   "filename": "wallpaper.png", // the filename of the wallpaper
   "categories": ["category1", "category2"] // the categories of the wallpaper
 }
@@ -24,6 +25,8 @@ you can add multiple categories to the wallpaper, and the current available cate
 - `fantasy`
 - `scifi`
 - `games`
+- `nature`
+- `sports`
 
 ## project setup
 

@@ -1,32 +1,55 @@
 [
     {
+        "title": "death",
+        "author": "unknown",
         "filename": "wallhaven-856dlk.png",
         "categories": [
             "fantasy"
-        ],
-        "title": "death",
-        "author": "unknown"
+        ]
     },
     {
+        "title": "tardis",
+        "author": "alexzpm",
         "filename": "tardis-dw-1920x1080.jpg",
         "categories": [
             "scifi"
-        ],
-        "title": "tardis",
-        "author": "alexzpm"
+        ]
     },
     {
+        "title": "superbloom",
+        "author": "Kevin Hong",
+        "author_url": "https://kevinhong.com/superbloom",
         "filename": "lVvD8O.jpg",
         "categories": [
             "fantasy"
-        ],
-        "title": "superbloom",
-        "author": "Kevin Hong"
+        ]
     },
     {
         "title": "avowed",
         "author": "obsidian",
-        "filename": "avowed.png",
-        "categories": ["fantasy", "games"]
-      }
+        "author_url": "https://avowed.obsidian.net",
+        "filename": "avowed.jpeg",
+        "categories": [
+            "fantasy",
+            "games"
+        ]
+    },
+    {
+        "title": "alan wake 2",
+        "author": "remedy",
+        "author_url": "https://alanwake.com",
+        "filename": "alanwake2.png",
+        "categories": [
+            "games"
+        ]
+    },
+    {
+        "title": "f1 mclaren",
+        "author": "formula 1",
+        "filename": "f1-mclaren.jpeg",
+        "categories": [
+            "sports",
+            "cars"
+        ]
+    }
 ]

@@ -17,6 +17,8 @@ import { mapState } from 'pinia'
 import { useWallpapersStore } from '@/stores'
 
 export default {
+  name: 'DefaultGallery',
+
   data: () => ({
     isOpen: false,
     wallpapers: [],
@@ -35,12 +37,12 @@ export default {
         let img = new Image()
         img.src = wpp.url
 
-        img.decode().then(() => {
+        img.onload = () => {
           wpp.image = {
             width: img.width,
             height: img.height
           }
-        })
+        }
 
         return wpp.image ? `${wpp.image.width}x${wpp.image.height}` : 'loading...'
       }
@@ -80,7 +82,7 @@ export default {
 </script>
 
 <template>
-  <div class="grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+  <div class="grid gap-4 grid-cols-1 sm:grid-cols-3 md:grid-cols-4">
     <div v-for="wpp, i in getByCategory(getCategory)" :key="i"
          class="group cursor-pointer relative ring-inset" @click="openModal(wpp)">
       <img :src="wpp.url" class="object-cover w-full aspect-video rounded" />
@@ -91,8 +93,13 @@ export default {
       </div>
 
       <div class="absolute hidden sm:flex justify-between bottom-0 w-full p-1 bg-zinc-900 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
-        <div>
-          {{ resolution(wpp) }}
+        <div class="w-full">
+          <span>
+            {{ wpp.title }} 
+          </span>
+          <span class="float-end">
+            by {{ wpp.author }}
+          </span>
         </div>
       </div>
     </div>
@@ -124,15 +131,20 @@ export default {
               </dialog-description>
 
               <a :href="wallpaper.url" target="_blank" class="outline-none">
-                <img class="rounded-md sm:max-h-[70vh] h-full w-full object-cover"
-                     :src="wallpaper.url">
+                <img class="rounded-md sm:max-h-[70vh] h-full w-full object-cover" :src="wallpaper.url">
               </a>
 
               <dialog-description>
                 <div class="mt-1 flex justify-between">
                   <div>
-                    by {{ wallpaper.author }}
+                    by 
+                    <a :href="wallpaper.author_url"
+                       target="_blank"
+                       :class="{'underline': wallpaper.author_url}">
+                      {{ wallpaper.author }}
+                    </a>
                   </div>
+
                   <headless-menu v-if="wallpaper.categories.length > 0" as="div" class="relative">
                     <menu-button class="underline">categories</menu-button>
                     <menu-items

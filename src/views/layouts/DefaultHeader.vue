@@ -18,8 +18,10 @@ export default {
     navigation: [
       { name: 'all', path: '/' },
       { name: 'fantasy', path: '/fantasy' },
-      {name: 'scifi', path: '/scifi' },
-      {name: 'games', path: '/games' }
+      { name: 'scifi', path: '/scifi' },
+      { name: 'games', path: '/games' },
+      { name: 'sports', path: '/sports' },
+      { name: 'cars', path: '/cars' }
     ]
   }),
 
@@ -32,7 +34,7 @@ export default {
 </script>
 
 <template>
-  <disclosure as="nav" class="sticky top-0 bg-zinc-900 z-10" v-slot="{ open }">
+  <disclosure as="nav" class="sticky top-0 bg-zinc-900/50 backdrop-blur z-10" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 flex items-center sm:hidden">
@@ -41,6 +43,7 @@ export default {
             <icon-x v-else class="block h-6 w-6" aria-hidden="true" />
           </disclosure-button>
         </div>
+
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="hidden sm:block">
             <div class="flex space-x-4">
