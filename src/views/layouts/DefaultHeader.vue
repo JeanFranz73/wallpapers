@@ -21,7 +21,8 @@ export default {
       { name: 'scifi', path: '/scifi' },
       { name: 'games', path: '/games' },
       { name: 'sports', path: '/sports' },
-      { name: 'cars', path: '/cars' }
+      { name: 'cars', path: '/cars' },
+      { name: 'anime', path: '/anime' }
     ]
   }),
 

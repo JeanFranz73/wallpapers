@@ -51,5 +51,14 @@
             "sports",
             "cars"
         ]
+    },
+    {
+        "title": "eva 01",
+        "author": "maciej kuciara",
+        "filename": "eva01.jpg",
+        "categories": [
+            "anime",
+            "scifi"
+        ]
     }
 ]

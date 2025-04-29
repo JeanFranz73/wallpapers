@@ -27,6 +27,7 @@ you can add multiple categories to the wallpaper, and the current available cate
 - `games`
 - `nature`
 - `sports`
+- `anime`
 
 ## project setup
 
